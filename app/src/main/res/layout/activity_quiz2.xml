@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".Quiz2">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/quiz2" />
+
+    <TextView
+        android:id="@+id/tvQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="-10dp"
+        android:text=" La principale zone de danger se situe en: "
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gr1">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B à droite de la voiture "
+            android:id="@+id/etOption1" />
+
+        <RadioButton
+            android:id="@+id/etOption2"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="A à gauche de la voiture" />
+
+
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textStyle="bold"
+        android:id="@+id/blNext" />
+
+</LinearLayout>

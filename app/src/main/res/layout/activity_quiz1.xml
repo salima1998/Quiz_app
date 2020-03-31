@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:padding="39dp"
+    tools:context=".Quiz1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:src="@drawable/quiz1" />
+
+    <TextView
+        android:id="@+id/tvQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="10dp"
+        android:text="  Choississez la bonne réponse : "
+        android:textColor="@color/colorAccent"
+        android:textSize="23sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gr1">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:id="@+id/etOption1" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:id="@+id/etOption2" />
+
+        <RadioButton
+            android:id="@+id/etOption3"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Option 3" />
+
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textStyle="bold"
+        android:id="@+id/blNext" />
+
+
+</LinearLayout>

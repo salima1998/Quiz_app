@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:padding="39dp"
+    tools:context=".RegistrerActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:src="@drawable/register2" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/Mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:hint="Mail" />
+
+    <EditText
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:hint="Login" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/loginc"
+        android:text="Register"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tvlog"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="To login click here"
+        android:textColor="@color/text"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</LinearLayout>
